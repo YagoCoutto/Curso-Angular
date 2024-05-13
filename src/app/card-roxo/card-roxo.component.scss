@@ -1,0 +1,16 @@
+.card{
+    max-width: 350px;
+    background-color: purple;
+    border-radius: 25px;
+    padding: 30px;
+
+    &__item{
+        padding: 10px;
+    }
+
+    &__price{
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+}

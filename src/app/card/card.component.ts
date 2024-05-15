@@ -20,7 +20,7 @@ export class CardComponent {
   plano : Iplano = {
     infos: {
       tipo: 'Simples',
-      preco: 100
+      preco: 100,
     }
   }
 }

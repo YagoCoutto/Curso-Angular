@@ -1,5 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
+interface Iplanos {
+  infos: IInfos
+}
+
+interface IInfos {
+  tipo: string,
+  preco: number
+}
 
 @Component({
   selector: 'app-card-roxo',
@@ -8,10 +16,10 @@ import { Component } from '@angular/core';
   styleUrl: './card-roxo.component.scss'
 })
 export class CardRoxoComponent {
-  plano = {
-    infos:{
+  plano: Iplanos = {
+    infos: {
       tipo: 'Completo',
-      preco: 'R$' + 150 + ',00/Mês'
+      preco: 150
     }
   }
 }

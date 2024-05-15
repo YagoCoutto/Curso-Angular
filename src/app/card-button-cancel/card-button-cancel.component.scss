@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .card-button-cancel{
     cursor: pointer;
     padding: 10px;
@@ -5,5 +7,6 @@
     margin-top: 25px;
     text-align: center;
     border-radius: 25px;
-    background-color: red;
+    color: $fntColor;
+    background-color: $bgColor;
 }

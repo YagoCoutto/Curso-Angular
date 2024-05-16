@@ -21,3 +21,12 @@
         border-radius: 25px;
     }
 }
+
+/*Utilizando :host + ::ng-deep ira alterar o border-color apenas do componente filho do card*/
+:host ::ng-deep .mdc-slider__track--active_fill {
+    border-color: rgb(0, 255, 34) !important;
+}
+
+.global{
+    background-color: palevioletred;
+}

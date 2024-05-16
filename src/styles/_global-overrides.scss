@@ -1,0 +1,8 @@
+/*Dentro do global-overrides posso alterar todas as classes da minha aplicação sem precisar utilizar o ::ng-deep*/
+//global-overrides deve ser importado no styles.scss raiz da aplicação.
+
+
+/*Esta alteração ira ser aplicada globalmente em todos os componentes mat-slider do angular material*/
+/*.mdc-slider__track--active_fill {
+    border-color: rgb(0, 255, 34) !important;
+}*/

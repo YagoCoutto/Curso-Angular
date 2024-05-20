@@ -25,15 +25,34 @@ export class CardComponent {
     }
   }
 
-  input: string = 'Teste loco'
-  typeInput: string = 'Password'
+  input: string = 'Teste loco';
+  typeInput: string = 'Password';
   
-  isDisable = true;
+  isDisable = false;
   enableInput (){
     this.isDisable = false;
   }
   disableInput(){
     this.isDisable = true;
   }
+
+  setPasswordTypeInput(){
+    this.typeInput = 'Password';
+  }
+
+  setTextTypeInput(){
+    this.typeInput = 'Text';
+  }
+
+  logInput(){
+    //console.log(this.inputText)
+  }
+
+  handleInputKeyup(event: KeyboardEvent){
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText)
+  }
+
+
 
 }

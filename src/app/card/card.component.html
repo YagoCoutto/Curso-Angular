@@ -10,6 +10,31 @@
     <div class="global">GLOBAL</div>
 </div>
 
-<input type="text" [value]="input" [type]="typeInput" [disabled]="isDisable">
-<button (click)="enableInput()">Habilitar</button>
-<button (click)="disableInput()">Desabilitar</button>
+
+
+<div class="card">
+
+    <input 
+    type="text" 
+    [value]="input" 
+    [type]="typeInput" 
+    [disabled]="isDisable" 
+    (keyup)="handleInputKeyup($event)"
+    />
+    
+
+    <br>
+
+    <button (click)="enableInput()">Habilitar</button>
+    <button (click)="disableInput()">Desabilitar</button>
+
+    <br>
+
+    <button (click)="setPasswordTypeInput()">Senha</button>
+    <button (click)="setTextTypeInput()">Texto</button>
+
+    <br>
+
+    <button (click)="logInput()">Log</button>
+
+</div>
